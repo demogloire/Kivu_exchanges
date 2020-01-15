@@ -27,11 +27,11 @@
         <!-- Navigation -->
         <div class="collapse navbar-collapse" id="navbar-menu">
             <ul class="nav navbar-nav menu">
-                <li><a href="">Accueil</a></li>                    
-                <li><a href="#about">A propos</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href=" {{url_for('plate.index')}} ">Suivis colis</a></li>
-                <li><a href="#contact_form">Contactez-nous</a></li>
+                <li><a href="{{url_for('plate.index')}}">Accueil</a></li>                    
+                <li><a href="{{url_for('plate.index')}}#about">A propos</a></li>
+                <li><a href="{{url_for('plate.index')}}#services">Services</a></li>
+                <li><a href="">Suivis colis</a></li>
+                <li><a href="{{url_for('plate.index')}}#contact_form">Contactez-nous</a></li>
             </ul>
         </div>
     </div>   

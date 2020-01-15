@@ -37,7 +37,7 @@ def ajouteruserad():
    #ENregfistrement des operations
 
    ## Vérification de l'existence d'au moins un administrateur
-    ver_admini_existe= User.query.filter_by(Statut=True).first()
+   ver_admini_existe= User.query.filter_by(statut=True, role="Admin").first()
    if ver_admini_existe is not None:
       return redirect(url_for('auth.logout'))
 
@@ -46,7 +46,7 @@ def ajouteruserad():
       prenom=form.prenom.data.capitalize()
       post_nom=form.post_nom.data.upper()
       password_hash=bcrypt.generate_password_hash(form.password.data).decode('utf-8')   
-      utilisateur=User(nom=nom, prenom=prenom,post_nom=post_nom, password=password_hash, username=form.username.data,role=form.role.data)
+      utilisateur=User(nom=nom, prenom=prenom,post_nom=post_nom, statut=True, password=password_hash, username=form.username.data,role=form.role.data)
       db.session.add(utilisateur)
       db.session.commit()
       flash("Un administrateur est crée",'success')

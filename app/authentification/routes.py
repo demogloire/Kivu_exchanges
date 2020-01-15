@@ -14,8 +14,8 @@ def login():
       return redirect(url_for('main.dashboard'))
    
    ## Vérification de l'existence d'au moins un administrateur
-    ver_admini_existe= User.query.filter_by(Statut=True).first()
-    if ver_admini_existe is None:
+   ver_admini_existe= User.query.filter_by(statut=True, role="Admin").first()
+   if ver_admini_existe is None:
       return redirect(url_for('user.ajouteruserad'))
 
 
