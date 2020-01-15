@@ -1,0 +1,281 @@
+{% extends "site.html" %}
+{% block body %}
+
+{% include'elements/_slider.html'%}
+
+
+<!-- About -->
+<section id="about">
+    <div class="container about_bg">
+        <div class="row">
+            <div class="col-lg-7 col-md-6">
+                <div class="about_content">
+                    <h2>Kivu Exchanges Company</h2>
+                    <h3>Tous les services dans un seul service.</h3>
+                    <p>
+                      La Société Kivu Exchanges Sarl, est une organisation créée par la législation congolaise et qui mène ses activités dans plusieurs activités grâce l'expérience et l'expertise, Elle interviens dans le domaine du commerce général, de la logistique, de la facilitation douanière et de la nouvelle technologie de l'information et de la communication. 
+                      
+                     
+                    </p>
+                    <p> Elle est dans l'espace OHADA grâce à l'adhésion de l'Etat congolais dans cette organisation régionale.</p>
+                   <p>
+                    Elle assure la souplesse, la rapidité et fiable dans ses services mêmes dans le plus grand extrême urgence de la production et de la consommation.
+                   </p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-lg-offset-1">
+                <div class="about_banner">
+                    <img src=" {{url_for('static', filename='logo/t.png')}} " alt="" />
+                </div>
+            </div>
+        </div>
+    </div>
+</section><!-- About end -->
+
+<!-- Services -->
+<section class="bg-mod" id="services">
+  <div class="container ">
+      <h2>Nos services</h2>
+      <div class="row">
+          <div class="col-md-4">
+              <div class="service_item">
+                  <h3>Commerce général</h3>
+                  <p class="text-justify">Nous offrons les biens et les services pouvant satisfaire la consommation quotidienne des 
+                    personnes ou de groupe des personnes, la spécificité de cette offre réside dans le sens que 
+                    beaucoup des organisations et/ou personne, veulent une facilitation totale vue leur emploi
+                     du temps. Pratiquement à présent nous le faisons 
+                    à plusieurs entreprises de la place mais aussi à l'étranger.</p>
+                
+                  <a href="" data-toggle="modal" data-target="#commerce" class="btn know_btn">Savoir plus</a>
+                    <!-- Modal -->
+                    <div class="modal fade " id="commerce" role="dialog">
+                      <div class="modal-dialog modal-lg">
+                      
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Commerce général</h4>
+                          </div>
+                          <div class="modal-body text-justify">
+                            <p>Nous offrons les biens et les services pouvant satisfaire la consommation 
+                              quotidienne des personnes ou de groupe des personnes, la spécificité 
+                              de cette offre réside dans le sens que beaucoup des organisations 
+                              et/ou personne, veulent une facilitation totale vue leur emploi 
+                              du temps. Pratiquement à présent nous le faisons à plusieurs entreprises 
+                              de la place mais aussi à l'étranger.</p>
+
+                              <p>
+                                Il s’agit de: <br>
+                              - Produits alimentaires tels que de l’huile, riz, lait, conserves, farine… <br>
+                              - Produits domestique tels les plastics,matelas,couverture,ustensiles… <br>
+                              - Autres produits localement selon votre demande <br>
+                              </p>
+                              <p>
+                                Cette offre vise les entreprises privée que public de la place mais aussi de l'extérieur, 
+                                en plus de cela nous le faisons aussi à des particulier, tout cela dans l'unique but de
+                                 facilité l'accusation dans un temps voulu et de trouver les services prêts à la consommation 
+                                 en garantissant une livraison à domicile.
+                              </p>
+
+                              <p>
+                                Dans le but, de s'emparé d'une grande part du marché et devenir une
+                                 entreprise  de commerce général de référence, nous arrivons même à 
+                                 commander de produits dans d'autres pays d'Afrique, en Asie, en Europe et  
+                                 en Amérique sur commande des clients en 
+                                ligne et leurs livré dans un lapse de temps.
+                              </p>
+
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+                          </div>
+                        </div>
+                        
+                      </div>
+                    </div>
+              
+              
+                </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="service_item">
+                <h3>Logistique (Transport)</h3>
+                <p class="text-justify">
+                  La circulation des biens et des services, est d'une importance capitale, 
+                  notre offre de logistique gère les flux physique des biens entre autre dans 
+                  le domaine de transport, nous assurons une logistique de bien et de service
+                   sur l'étendue nationale et ailleurs
+                   pour plusieurs organisation gouvernementale et non gouvernementale. 
+
+                </p>
+              
+                <a href="" data-toggle="modal" data-target="#logistique" class="btn btn-success know_btn">Savoir plus</a>
+                  <!-- Modal -->
+                  <div class="modal fade " id="logistique" role="dialog">
+                    <div class="modal-dialog modal-lg">
+                    
+                      <!-- Modal content-->
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                          <h4 class="modal-title">Logistique (Transport) </h4>
+                        </div>
+                        <div class="modal-body text-justify">
+                          <p>La circulation des biens et des services, est d'une importance capitale, 
+                            notre offre de logistique gère les flux physique des biens entre autre 
+                            dans le domaine de transport, nous assurons une logistique de bien et 
+                            de service sur l'étendue nationale et ailleurs pour plusieurs organisation 
+                            gouvernementale et non gouvernementale. </p>
+
+                            <p>
+                              Aujourd'hui avec les tracasseries routière, les infrastructures en 
+                              mauvais état et le besoin de livraison à temps, nous mettons au 
+                              service nos clients les véhicules, l'expertise pour transporter les 
+                              biens au point d'embarquement jusqu'au point de débarquement. 
+                              En garantissant la protection et la livraison au temps voulu.
+                            </p>
+
+                            <p>
+                              Avec nous vous avez la possibilité de retracer votre chargement par les applications que l'entreprise mette à la disposition des clients pour garantir la fiabilité. <br>
+                              Nos services en dehors de transport :<br>
+                              -Equipment de télécommunication management (entreposage, kitting, checking of towers, handling, stocktake, inventory, layout, reporting, distribution….)<br>
+                              -Escorte des produits, tracking&tracing des containeurs<br>
+                              -Location des dépôts, véhicules, élévateurs, grue, ainsi que la main d’œuvres…<br>
+                              
+                            </p>
+                           
+
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn  btn-default" data-dismiss="modal">Fermer</button>
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </div>
+            
+            
+              </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="service_item">
+                <h3>Agence en douane.</h3>
+                <p class="text-justify">
+                  Les particuliers et les entreprises tous dans la finalité de 
+                  la consommation veulent immatriculer leurs biens importés si 
+                  les derniers sont des engins roulant et cherche la facilitation
+                   en matière douanière. Ainsi notre agence est au cheval entre
+                    la Direction générale de Douanes et Accises et les clients qui 
+                    veulent la facilitation.
+
+                </p>
+              
+                <a href="" data-toggle="modal" data-target="#agence" class="btn btn-success know_btn">Savoir plus</a>
+                  <!-- Modal -->
+                  <div class="modal fade " id="agence" role="dialog">
+                    <div class="modal-dialog modal-lg">
+                    
+                      <!-- Modal content-->
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                          <h4 class="modal-title">Agence en douane </h4>
+                        </div>
+                        <div class="modal-body text-justify">
+                          <p>Les particuliers et les entreprises tous dans la finalité de la 
+                            consommation veulent immatriculer leurs biens importés si les derniers
+                             sont des engins roulant et cherche la facilitation en matière douanière.
+                              Ainsi notre agence est au cheval entre la Direction générale de Douanes et 
+                              Accises et les clients qui veulent la facilitation. </p>
+
+                            <p>
+                              Nous leurs aidons dans: <br>
+                            - Les procédures dédouanement, <br>
+                            - Trouver les plaques pour engins roulant, <br>
+                            - Déchargement et livraison de containeurs à domicile. <br>
+
+                            </p>
+
+                            <p>Car en vertu de  texte de la DGDA, pour tout dédouanement de 
+                              marchandises, il faut faire recouru aux  agences en douanes.
+                               Nous aidons nos clients ci-haut cité d'alléger les procédures en 
+                               bonne et due forme.</p>
+                            
+                               <p>
+                                En plus de cela, par le service du commerce général et de logistique, 
+                                nous offrons de service conjoint, ainsi, on passe de commande dans n'importe 
+                                quel pays à travers nous, nous assurons la logistique E2E et le dédouanement 
+                                sans toutefois que le client se  tracasse avec beaucoup des procédures.
+                               </p>
+                           
+
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn  btn-default" data-dismiss="modal">Fermer</button>
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </div>
+            
+            
+              </div>
+          </div>
+
+      </div>
+  </div>
+</section><!-- Services end -->
+
+<!-- Why us -->
+<section id="why_us">
+  <div class="container text-center">
+      <div class="row">
+          <div class="col-md-12 ">
+              <div class="head_title">
+                  <h2>SUIVIS DE COLIS</h2>
+                  <p>
+                    Nous offrons une spécialisation unique dans le transport de vos colis. Nous vous garantissons le suivis en ligne de vos colis expédié. 
+                  </p>
+
+              </div>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-md-12 col-sm-6">
+              <div class="why_us_item">
+                  <span class="fa fa-truck"></span>
+                  <br><br>
+                  </div>
+          </div>
+          
+      </div>
+  </div>
+</section><!-- Why us end -->
+
+<!-- Contact form -->
+<section id="contact_form">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Pour une question?</h2>
+                <h2 class="second_heading">Pour vos préocupations</h2>
+            </div>
+            <form role="form" class="form-inline text-right col-md-6" >
+                <div class="form-group">
+                    <input type="text" class="form-control" id="name" placeholder="Nom">
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control" id="email" placeholder="E-mail">
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control" rows="5" id="msg" placeholder="Message"></textarea>
+                </div>
+                <button type="submit" class="btn submit_btn">Envoyer</button>
+            </form>				
+        </div>
+    </div>
+</section><!-- Contact form end -->
+  {% endblock %}
