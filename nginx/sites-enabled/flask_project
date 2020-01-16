@@ -18,11 +18,11 @@ server {
 server {
     listen 443 ssl;
     listen [::]:443 ssl;
-    server_name murhabazi.com;
+    server_name kivu.exchange;
     server_tokens off;
 
-    ssl_certificate /etc/letsencrypt/live/murhabazi.com/fullchain.pem;
-    ssl_certificate_key /etc/letsencrypt/live/murhabazi.com/privkey.pem;
+    ssl_certificate /etc/letsencrypt/live/kivu.exchange/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/kivu.exchange/privkey.pem;
 
     include /etc/dhparams/options-ssl-nginx.conf;
     ssl_dhparam /etc/dhparams/dhparams-2048.pem;
