@@ -8,9 +8,14 @@
 ```
 docker-machine create \
 -d digitalocean \
---digitalocean-access-token Digital Ocean APi Cred\             
+--digitalocean-access-token 5eee9b9f5373c21bfd53c2a9a5e567a27f4d8e579ed5c5b42801bb09608d7947\             
 kivu-exchange
 ```
+
+docker-machine create \
+-d digitalocean \
+--digitalocean-access-token ADD_YOUR_TOKEN_HERE \
+production
 
 - Run `docker-machine build`
 
